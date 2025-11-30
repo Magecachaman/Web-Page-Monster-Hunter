@@ -67,7 +67,7 @@ function validateCustomMonstersForm(event) {
   } else {
     if (editingIndex === null) {
       addToMonsters(event);
-    }else{
+    } else {
       updateMonster(event);
     }
   }
