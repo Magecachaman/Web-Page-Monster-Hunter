@@ -17,3 +17,8 @@ https://dribbble.com/shots/24973575-Task-Management-Web-and-App-Design
 # Acknowledgments
 
 W3schools, Youtube, Stack Overflow.
+
+#Useful Links
+
+https://www.youtube.com/watch?v=gQZbQD31RnM
+https://www.youtube.com/watch?v=fOAeM_8jHo0
