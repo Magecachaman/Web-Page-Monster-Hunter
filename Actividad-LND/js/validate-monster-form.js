@@ -100,6 +100,7 @@ function showMonstersList() {
   monsterList += "<th>Tipo</th>";
   monsterList += "<th>Elemento</th>";
   monsterList += "<th>Debilidad</th>";
+  monsterList += "<th>Acciones</th>";
   monsterList += "</tr>";
   for (let i = 0; i < monsters.length; i++) {
     monsterList += "<tr>";
