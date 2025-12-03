@@ -133,14 +133,14 @@ nav a {
   color: black;
 }
 
-form {
+/* form {
   display: block;
   width: 100%;
   margin-inline: 1rem auto;
   padding: 0.1rem;
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+} */
 
 #form-and-display {
   width: 100%;
@@ -153,8 +153,8 @@ form {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 10vw;
-  color: white;
+  width: 50vw;
+  color: rgb(0, 0, 0);
 }
 
 #form-and-display {
@@ -164,11 +164,48 @@ form {
   margin-bottom: 20px;
 }
 
-.form-group {
-  margin-bottom: 15px;
+form {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button-form,.btn-edit{
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  width: 100%;
+  padding: 10px;
+  background-color: #ad0505b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
@@ -180,7 +217,7 @@ input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-}
+} */
 
 table {
   border: 2px solid black;
@@ -328,28 +365,23 @@ input {
 
 @keyframes myAnimation {
   0% {
-    background-color: red;
-    left: 0px;
+    background-color: rgb(114, 42, 42);
   }
 
   25% {
-    background-color: yellow;
-    left: 200px;
+    background-color: rgb(116, 116, 37);
   }
 
   50% {
-    background-color: blue;
-    left: 200px;
+    background-color: rgb(29, 29, 87);
   }
 
   75% {
-    background-color: green;
-    left: 0px;
+    background-color: rgb(22, 70, 22);
   }
 
   100% {
     background-color: rgb(255, 255, 255);
-    left: 0px;
   }
 }
 
