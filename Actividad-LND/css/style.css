@@ -182,6 +182,125 @@ input {
   font-size: 16px;
 }
 
+#global-chat {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+#global-chat-link {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  font-size: xx-large;
+  padding: 1em;
+  border: 5px white solid;
+  border-radius: 70px;
+  animation: myGradient 15s ease infinite;
+}
+
+@keyframes myGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#id01 {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+}
+
+#id01>span {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+}
+
+#id01>span:hover {
+  color: #ccc;
+}
+
+#id01>p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container>div {
+  margin: 2em;
+  width: 90vw;
+}
+
+#message-list>div {
+  background-image: url(../img/mhwilds-chat-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  margin-bottom: 2em;
+  border: 1px solid rgb(255, 174, 0);
+  border-radius: 5px;
+  padding: 1em;
+}
+
+#form-send-message {
+  background-image: url(../img/mhwilds-chat-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#form-send-message>* {
+  margin: 1em;
+  border: 5px solid rgb(77, 190, 77);
+  border-radius: 15px;
+  padding: 1em;
+}
+
+
 .button-form,
 .btn-edit {
   width: 100%;
@@ -239,7 +358,6 @@ th {
   background-color: #d4af37;
   font-weight: bold;
 }
-
 
 
 h1 {
@@ -793,4 +911,10 @@ label {
     padding: 0.35rem 0.35rem;
     border: 1px solid black;
   }
+  #form-send-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 }

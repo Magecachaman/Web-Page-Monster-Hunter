@@ -1,0 +1,65 @@
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  background-image: url(../img/mhwilds-chat-background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.container>div {
+  margin: 2em;
+  width: 90vw;
+}
+
+#message-list>div {
+  margin-bottom: 1em;
+  border: 1px solid rgb(255, 174, 0);
+  background: linear-gradient(to right, lightblue, gray);
+  border-radius: 5px;
+}
+
+#form-send-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#form-send-message>* {
+  margin: 1em;
+  border: 5px solid green;
+  border-radius: 7px;
+  padding: 1em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 300px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container>div {
+    width: 40vw;
+  }
+  #form-send-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}

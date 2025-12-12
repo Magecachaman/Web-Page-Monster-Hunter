@@ -283,6 +283,29 @@
           hunter's trusted "Palico" partner. They'll provide invaluable hunting AND moral support! </p>
       </div>
     </div>
+    <div id="global-chat">
+      <button onclick="document.getElementById('id01').style.display='block'" id="global-chat-link">Chatea con
+        otros</button>
+    </div>
+
+    <div id="id01">
+      <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">&times;</span>
+      <div class="container">
+        <div class="send-message">
+          <form id="form-send-message">
+            <input id="message-sent" type="text" name="message" placeholder="your message">
+            <input id="message-writer" type="text" name="sent-by" placeholder="your name">
+            <button id="send-message-chat" type="submit">send</button>
+          </form>
+        </div>
+        <div id="message-list">
+        </div>
+      </div>
+      <script type="module" src="js/firebase-crud.js"></script>
+    </div>
+    </div>
+    </div>
   </main>
   <footer>
     <div class="footer-column">
